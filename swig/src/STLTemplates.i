@@ -51,6 +51,9 @@
 // AKA ObsEpochMap
 %template(ObsEpochMap) std::map<gpstk::CommonTime, gpstk::ObsEpoch>;
 
+// For SP3Header::getSatList()
+%template(map_SP3SatID_short) std::map<gpstk::SP3SatID, short>;
+
 // These are needed to properly interpret an ObsID instance
 %template(map_ObservationType_string) std::map<enum gpstk::ObsID::ObservationType, std::string>;
 %template(map_CarrierBand_string) std::map<enum gpstk::ObsID::CarrierBand, std::string>;
