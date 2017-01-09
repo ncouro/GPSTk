@@ -20,6 +20,7 @@ using namespace gpstk;
 %include "std_list.i"
 %include "std_set.i"
 %include "std_multimap.i"
+%include "std_ios.i"
 
 %rename(__str__) *::asString() const;
 
